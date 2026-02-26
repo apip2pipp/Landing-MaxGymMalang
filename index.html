@@ -1,0 +1,454 @@
+<html lang="id" class="scroll-smooth bg-black"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MAXGYM MALANG | Premium Performance Center</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<style>
+body {
+font-family: 'Manrope', sans-serif;
+background-color: #050505;
+color: #e5e5e5;
+overflow-x: hidden;
+}
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+width: 5px;
+}
+::-webkit-scrollbar-track {
+background: #000000;
+}
+::-webkit-scrollbar-thumb {
+background: #b91c1c;
+}
+/* Specific Styles */
+.text-stroke {
+-webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+color: transparent;
+}
+.laser-grid {
+background-image:
+linear-gradient(rgba(185, 28, 28, 0.05) 1px, transparent 1px),
+linear-gradient(90deg, rgba(185, 28, 28, 0.05) 1px, transparent 1px);
+background-size: 80px 80px;
+}
+.glow-red {
+box-shadow: 0 0 30px rgba(185, 28, 28, 0.2);
+}
+.glow-text {
+text-shadow: 0 0 20px rgba(220, 38, 38, 0.6);
+}
+/* Reveal Animation */
+.reveal-on-scroll {
+opacity: 0;
+transform: translateY(20px);
+transition: all 0.8s ease-out;
+}
+.reveal-visible {
+opacity: 1;
+transform: translateY(0);
+}
+/* Hero Logo Text Slide Animation */
+@keyframes slideInRight {
+0% {
+transform: translateX(-20%);
+opacity: 0;
+filter: blur(10px);
+}
+100% {
+transform: translateX(0);
+opacity: 1;
+filter: blur(0);
+}
+}
+.animate-logo-text {
+animation: slideInRight 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+animation-delay: 0.5s;
+opacity: 0;
+}
+.vertical-text {
+writing-mode: vertical-rl;
+text-orientation: mixed;
+transform: rotate(180deg);
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"></head>
+<body class="antialiased selection:bg-red-900 selection:text-white">
+    
+    <!-- Left Sidebar WhatsApp Button -->
+    <div class="fixed left-0 top-1/2 -translate-y-1/2 z-50 hidden lg:block">
+      <a href="https://wa.me/your-number" class="vertical-text block bg-black border-y border-r border-red-900/50 text-red-600 text-xs font-bold tracking-[0.2em] py-8 px-3 hover:bg-red-600 hover:text-black hover:shadow-[0_0_30px_rgba(220,38,38,0.4)] transition-all duration-500 uppercase">
+        <div class="flex items-center gap-2">
+            WhatsApp
+        </div>
+      </a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-40 mix-blend-difference px-6 py-6 border-b border-white/5 backdrop-blur-sm">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <!-- Navbar Logo -->
+        <div class="text-lg tracking-tighter text-white uppercase flex items-center gap-3 font-semibold">
+          <div class="text-red-600 text-2xl font-extrabold flex items-center tracking-tighter">
+             MAXGYM
+          </div>
+          <span class="text-neutral-500 text-xs tracking-widest border-l border-neutral-700 pl-3">
+            Malang Performance
+          </span>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex gap-8 text-xs font-medium tracking-widest uppercase text-neutral-400">
+          <a href="#philosophy" class="hover:text-red-600 transition-colors">
+            Filosofi
+          </a>
+          <a href="#integration" class="hover:text-red-600 transition-colors">
+            Biometrik
+          </a>
+          <a href="#membership" class="hover:text-red-600 transition-colors">
+            Harga
+          </a>
+        </div>
+
+        <!-- CTA -->
+        <button class="hidden md:flex group items-center gap-2 text-xs font-semibold tracking-widest uppercase border border-red-900/30 text-neutral-300 px-6 py-3 hover:bg-red-600 hover:text-black hover:border-red-600 transition-all duration-500 reveal-on-scroll reveal-visible">
+          Daftar Sekarang
+          <iconify-icon icon="solar:arrow-right-linear" class="group-hover:translate-x-1 transition-transform" width="16"></iconify-icon>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="md:hidden text-white hover:text-red-600 transition-colors">
+          <iconify-icon icon="solar:hamburger-menu-linear" width="24"></iconify-icon>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="relative h-screen w-full flex items-center justify-center overflow-hidden bg-neutral-950">
+      <!-- Background Image -->
+      <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&amp;w=3840&amp;auto=format&amp;fit=crop" alt="MaxGym Background" class="w-full h-full object-cover grayscale brightness-[0.45] contrast-125 scale-105 animate-[pulse_10s_ease-in-out_infinite]" style="">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-transparent via-transparent to-black"></div>
+      </div>
+
+      <!-- Hero Content -->
+      <div class="grid grid-cols-1 md:grid-cols-12 md:pb-32 w-full h-full max-w-7xl z-10 pr-6 pb-24 pl-6 relative gap-x-8 gap-y-8 items-end">
+        <div class="md:col-span-8">
+          <div class="mb-8 flex flex-col md:flex-row md:items-center gap-2 md:gap-6">
+            <div class="relative">
+              <h1 class="text-7xl md:text-9xl leading-none font-extrabold text-red-700 tracking-tighter flex items-center uppercase" style="filter: drop-shadow(0 0 30px rgba(185,28,28,0.4))">
+                MAXGYM
+              </h1>
+            </div>
+            <div class="overflow-hidden py-2 pl-1">
+              <h2 class="animate-logo-text text-4xl md:text-6xl text-neutral-300 tracking-tight leading-[0.9] uppercase font-semibold reveal-on-scroll reveal-visible">
+                Premium
+                <br>
+                <span class="text-neutral-500">Center</span>
+              </h2>
+            </div>
+          </div>
+
+          <p class="text-sm md:text-lg text-neutral-400 max-w-lg leading-relaxed border-l-2 border-red-700 pl-6 reveal-on-scroll reveal-visible">
+            Fasilitas elit di jantung kota Malang. Kami tidak memberikan kenyamanan, kami memberikan hasil melalui disiplin mutlak.
+          </p>
+        </div>
+
+        <div class="md:col-span-4 flex flex-col gap-6 justify-end">
+          <div class="flex gap-4 text-xs text-red-600 font-mono gap-x-4 gap-y-4 items-center">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-600 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-red-600"></span>
+            </span>
+            STATUS: MALANG BRANCH OPEN 24H
+          </div>
+          <div class="grid grid-cols-2 gap-px bg-white/5 border border-white/5">
+            <div class="bg-black/80 p-5 hover:bg-red-950/30 transition-colors cursor-pointer group border-r border-white/5 reveal-on-scroll reveal-visible">
+              <span class="block text-2xl text-white font-medium mb-1">01</span>
+              <span class="text-[10px] uppercase tracking-widest text-neutral-500 group-hover:text-red-500 transition-colors">
+                Hipertrofi
+              </span>
+            </div>
+            <div class="bg-black/80 p-5 hover:bg-red-950/30 transition-colors cursor-pointer group reveal-on-scroll reveal-visible">
+              <span class="block text-2xl text-white font-medium mb-1">02</span>
+              <span class="text-[10px] uppercase tracking-widest text-neutral-500 group-hover:text-red-500 transition-colors">
+                Kardio Elit
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute bottom-0 left-1/2 -translate-x-1/2 flex flex-col items-center">
+        <div class="w-px h-16 bg-gradient-to-b from-transparent via-red-600 to-transparent animate-pulse"></div>
+      </div>
+    </header>
+
+    <!-- Philosophy Section -->
+    <section id="philosophy" class="relative py-32 bg-black overflow-hidden border-t border-neutral-900">
+      <div class="absolute inset-0 laser-grid opacity-10 pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+          <div class="md:col-span-7">
+            <span class="inline-block text-red-600 text-xs font-bold tracking-[0.2em] mb-6 uppercase flex items-center gap-2">
+              <span class="w-4 h-px bg-red-600"></span>
+              The Standard
+            </span>
+            <h2 class="text-4xl md:text-6xl font-semibold text-white tracking-tight leading-tight mb-8 reveal-on-scroll">
+              STANDAR BARU
+              <span class="text-neutral-700">FITNESS.</span>
+              <br>
+              DI KOTA
+              <span class="text-red-700">MALANG.</span>
+            </h2>
+            <div class="space-y-8 text-neutral-400 text-sm md:text-lg font-light leading-relaxed max-w-2xl">
+              <p class="reveal-on-scroll">
+                MaxGym bukan sekadar tempat latihan. Kami adalah pusat performa yang dirancang untuk mereka yang menghargai kualitas peralatan dan atmosfer yang fokus. Terletak strategis di Malang untuk melayani komunitas yang haus akan progres.
+              </p>
+            </div>
+
+            <div class="mt-12 flex items-center gap-10">
+              <div class="flex flex-col border-l border-red-900 pl-4">
+                <span class="text-3xl font-light text-white">
+                  1.2k
+                  <span class="text-red-600 text-lg align-top">+</span>
+                </span>
+                <span class="text-[10px] uppercase text-neutral-500 tracking-wider mt-1">
+                  Active Members
+                </span>
+              </div>
+              <div class="flex flex-col border-l border-neutral-800 pl-4">
+                <span class="text-3xl font-light text-white">
+                  24
+                  <span class="text-red-600 text-lg align-top">/7</span>
+                </span>
+                <span class="text-[10px] uppercase text-neutral-500 tracking-wider mt-1">
+                  CCTV Secured
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:col-span-5 relative h-full min-h-[500px]">
+            <div class="absolute inset-0 bg-neutral-900 border border-neutral-800/50 p-1 group reveal-on-scroll">
+              <div class="h-full w-full bg-cover bg-center grayscale contrast-125 brightness-75 opacity-60 group-hover:opacity-80 transition-opacity duration-700 bg-[url(https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=1600&amp;q=80)]"></div>
+              <div class="absolute bottom-6 left-6 right-6 border-t border-red-600 pt-4 bg-gradient-to-t from-black/90 to-transparent p-4">
+                <div class="flex justify-between items-end">
+                  <div>
+                    <span class="block text-white text-lg font-semibold tracking-tight">
+                      MAXGYM HUB
+                    </span>
+                    <span class="text-[10px] font-mono text-red-500">
+                      SEKTOR_MALANG // CORE
+                    </span>
+                  </div>
+                  <iconify-icon icon="solar:arrow-right-up-linear" class="text-white group-hover:rotate-45 transition-transform duration-500" width="24"></iconify-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Biometrics Section -->
+    <section id="integration" class="py-24 bg-neutral-950 border-y border-neutral-900 relative overflow-hidden">
+      <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-red-900/50 to-transparent"></div>
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="text-center mb-16">
+          <span class="inline-flex items-center gap-2 rounded-full bg-red-950/20 px-4 py-1.5 text-[10px] text-red-500 ring-1 ring-red-900/30 uppercase tracking-widest mb-6 border border-red-900/20">
+            <iconify-icon icon="solar:heart-pulse-linear" width="14"></iconify-icon>
+            Advanced Monitoring
+          </span>
+          <h2 class="text-4xl md:text-5xl font-semibold text-white tracking-tight reveal-on-scroll">
+            TEKNOLOGI &amp;
+            <span class="text-neutral-600">PREVENTIF</span>
+          </h2>
+        </div>
+        
+        <div class="relative mx-auto mt-20 max-w-4xl w-full aspect-[3/1]">
+            <div class="absolute top-[13.33%] left-[21.11%] -translate-x-1/2 -translate-y-[180%] z-20">
+                <span class="inline-flex items-center justify-center bg-white/5 w-12 h-12 ring-white/10 ring-1 rounded-lg">
+                    <iconify-icon icon="solar:watch-square-linear" class="text-neutral-400" width="24"></iconify-icon>
+                </span>
+            </div>
+            <div class="absolute top-[13.33%] left-[50%] -translate-x-1/2 -translate-y-[180%] z-20">
+                <span class="inline-flex items-center justify-center bg-white/5 w-12 h-12 ring-white/10 ring-1 rounded-lg">
+                    <iconify-icon icon="solar:smartphone-linear" class="text-neutral-400" width="24"></iconify-icon>
+                </span>
+            </div>
+            <div class="absolute top-[13.33%] left-[78.89%] -translate-x-1/2 -translate-y-[180%] z-20">
+                <span class="inline-flex items-center justify-center bg-white/5 w-12 h-12 ring-white/10 ring-1 rounded-lg">
+                    <iconify-icon icon="solar:heart-pulse-linear" class="text-neutral-400" width="24"></iconify-icon>
+                </span>
+            </div>
+            <svg viewBox="0 0 900 300" class="absolute inset-0 w-full h-full opacity-90" fill="none" stroke-width="2">
+              <path d="M450 250 C 450 180, 250 120, 190 40" stroke="#dc2626" stroke-width="1.5" stroke-linecap="round" fill="none" stroke-dasharray="400" stroke-dashoffset="400">
+                <animate attributeName="stroke-dashoffset" values="400;0;400" dur="3s" repeatCount="indefinite"></animate>
+              </path>
+              <path d="M450 250 C 450 180, 450 120, 450 40" stroke="#dc2626" stroke-width="1.5" stroke-linecap="round" fill="none" stroke-dasharray="400" stroke-dashoffset="400">
+                <animate attributeName="stroke-dashoffset" values="400;0;400" dur="3s" begin="0.2s" repeatCount="indefinite"></animate>
+              </path>
+              <path d="M450 250 C 450 180, 650 120, 710 40" stroke="#dc2626" stroke-width="1.5" stroke-linecap="round" fill="none" stroke-dasharray="400" stroke-dashoffset="400">
+                <animate attributeName="stroke-dashoffset" values="400;0;400" dur="3s" begin="0.4s" repeatCount="indefinite"></animate>
+              </path>
+            </svg>
+            <div class="absolute top-[83.33%] left-[50%] -translate-x-1/2 translate-y-[20%] z-20">
+              <span class="inline-flex items-center justify-center bg-black w-20 h-20 border-red-900/50 border rounded-2xl shadow-[0_0_50px_rgba(220,38,38,0.25)]">
+                <iconify-icon icon="solar:dumbbell-large-linear" class="text-red-600 animate-pulse" width="32"></iconify-icon>
+              </span>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="membership" class="py-32 bg-neutral-950 relative">
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="text-center mb-20">
+          <h2 class="text-4xl md:text-5xl font-semibold text-white tracking-tight mb-4 uppercase reveal-on-scroll">
+            Membership
+          </h2>
+          <p class="text-neutral-500 text-sm tracking-wide uppercase reveal-on-scroll">
+            Pilih Paket Performa Anda
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+          <!-- Monthly -->
+          <div class="group relative bg-white/5 border border-white/5 hover:border-white/20 p-8 flex flex-col transition-all duration-300 reveal-on-scroll">
+            <div class="mb-8">
+              <h3 class="text-lg font-bold text-white uppercase tracking-widest">Basic</h3>
+              <div class="mt-4 flex items-baseline">
+                <span class="text-4xl font-bold text-white tracking-tight">350rb</span>
+                <span class="ml-2 text-sm text-neutral-500">/bln</span>
+              </div>
+            </div>
+            <ul class="space-y-4 mb-10 flex-1">
+              <li class="flex items-start gap-3 text-sm text-neutral-400">
+                <iconify-icon icon="solar:check-read-linear" class="text-neutral-600 mt-0.5" width="16"></iconify-icon>
+                <span>Akses Full Gym</span>
+              </li>
+            </ul>
+            <button class="w-full py-4 border border-white/10 text-white text-[10px] font-bold uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all">Daftar</button>
+          </div>
+
+          <!-- Featured: Pro -->
+          <div class="group relative bg-black border border-red-600/50 p-10 flex flex-col shadow-[0_0_50px_rgba(220,38,38,0.1)] scale-105 z-10 reveal-on-scroll">
+            <div class="absolute top-0 inset-x-0 h-1 bg-red-600"></div>
+            <div class="mb-8">
+              <h3 class="text-xl font-bold text-white uppercase tracking-widest">Pro Elite</h3>
+              <div class="mt-4 flex items-baseline">
+                <span class="glow-text text-5xl font-bold text-white tracking-tight">500rb</span>
+                <span class="ml-2 text-sm text-neutral-400">/bln</span>
+              </div>
+            </div>
+            <ul class="space-y-5 mb-10 flex-1">
+              <li class="flex items-start gap-3 text-sm text-white">
+                <iconify-icon icon="solar:check-read-linear" class="text-red-600 mt-0.5" width="16"></iconify-icon>
+                <span>Personal Locker</span>
+              </li>
+              <li class="flex items-start gap-3 text-sm text-white">
+                <iconify-icon icon="solar:check-read-linear" class="text-red-600 mt-0.5" width="16"></iconify-icon>
+                <span>Free Personal Training (1x)</span>
+              </li>
+            </ul>
+            <button class="w-full py-4 bg-red-700 text-white text-[10px] font-bold uppercase tracking-[0.2em] hover:bg-red-600 transition-all">Pilih Paket</button>
+          </div>
+
+          <!-- Annual -->
+          <div class="group relative bg-white/5 border border-white/5 hover:border-white/20 p-8 flex flex-col transition-all duration-300 reveal-on-scroll">
+            <div class="mb-8">
+              <h3 class="text-lg font-bold text-white uppercase tracking-widest">Tahunan</h3>
+              <div class="mt-4 flex items-baseline">
+                <span class="text-4xl font-bold text-white tracking-tight">3.5jt</span>
+                <span class="ml-2 text-sm text-neutral-500">/thn</span>
+              </div>
+            </div>
+            <ul class="space-y-4 mb-10 flex-1">
+              <li class="flex items-start gap-3 text-sm text-neutral-400">
+                <iconify-icon icon="solar:check-read-linear" class="text-neutral-600 mt-0.5" width="16"></iconify-icon>
+                <span>Hemat 2 Bulan</span>
+              </li>
+            </ul>
+            <button class="w-full py-4 border border-white/10 text-white text-[10px] font-bold uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all">Daftar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black pt-24 pb-12 border-t border-neutral-900">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+          <div class="col-span-1 md:col-span-2">
+            <div class="text-2xl font-bold tracking-tighter text-white uppercase mb-6 flex items-center gap-2">
+              <span class="text-red-600 font-extrabold tracking-tighter">MAXGYM</span>
+            </div>
+            <p class="text-neutral-500 text-sm max-w-sm leading-relaxed reveal-on-scroll">
+              Pusat kebugaran premium di Malang. Menggabungkan teknologi biometrik dengan peralatan standar kompetisi.
+            </p>
+            <div class="flex gap-6 mt-8">
+              <a href="#" title="WhatsApp" class="text-neutral-600 hover:text-red-600 transition-colors">
+                <iconify-icon icon="logos:whatsapp-icon" width="20"></iconify-icon>
+              </a>
+              <a href="#" title="Instagram" class="text-neutral-600 hover:text-red-600 transition-colors">
+                <iconify-icon icon="skill-icons:instagram" width="20"></iconify-icon>
+              </a>
+              <a href="#" title="TikTok" class="text-neutral-600 hover:text-red-600 transition-colors">
+                <iconify-icon icon="logos:tiktok-icon" width="20"></iconify-icon>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="text-white text-[10px] font-bold uppercase tracking-[0.2em] mb-6 text-red-700">Lokasi</h4>
+            <p class="leading-relaxed text-sm text-neutral-500 reveal-on-scroll">
+              Jl. Soekarno Hatta No. XX,<br>Kec. Lowokwaru, Kota Malang,<br>Jawa Timur 65141
+            </p>
+            <a href="#" class="inline-flex items-center gap-2 text-xs text-red-600 mt-4 hover:text-white transition-colors">
+              <iconify-icon icon="solar:location-point-linear" width="16"></iconify-icon>
+              Petunjuk Arah
+            </a>
+          </div>
+
+          <div>
+            <h4 class="text-white text-[10px] font-bold uppercase tracking-[0.2em] mb-6 text-red-700">Kontak</h4>
+            <ul class="space-y-3 text-sm text-neutral-600 font-medium">
+              <li><a href="mailto:info@maxgym.id" class="hover:text-white transition-colors">info@maxgym.id</a></li>
+              <li><a href="https://wa.me/your-number" class="hover:text-white transition-colors">+62 8XX XXXX XXXX</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-neutral-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p class="text-neutral-800 text-[10px] uppercase tracking-widest">
+            © 2024 MAXGYM MALANG. All Rights Reserved.
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-1.5 h-1.5 rounded-full bg-red-600 animate-pulse"></div>
+            <span class="text-neutral-600 text-[10px] font-mono tracking-widest uppercase">
+              Malang Branch Online
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+          const observer = new IntersectionObserver((entries) => {
+              entries.forEach(entry => {
+                  if (entry.isIntersecting) {
+                      entry.target.classList.add('reveal-visible');
+                  }
+              });
+          }, { threshold: 0.1 });
+
+          document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+      });
+    </script>
+</body></html>
